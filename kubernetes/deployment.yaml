@@ -15,13 +15,13 @@ spec:
     spec:
       containers:
         - name: gitops-demo-app
-          image: shimdongseup/gitops-demo-app:initial
+          image: shimdongseup/gitops-demo-app:95cc4aa
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
           env:
             - name: APP_VERSION
-              value: "initial"
+              value: "95cc4aa"
           readinessProbe:
             httpGet:
               path: /health
